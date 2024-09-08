@@ -1,8 +1,18 @@
 import { defineConfig } from 'vite'
 import vue from '@vitejs/plugin-vue'
+import MonacoEditorPlugin from 'monaco-editor-webpack-plugin'
 
-// https://vitejs.dev/config/
 export default defineConfig({
-  plugins: [vue()],
+  plugins: [
+    vue(),
+    {
+      name: 'monaco-editor-webpack-plugin',
+      config(config) {
+        config.plugins.push(new MonacoEditorPlugin({
+          languages: ['json']
+        }))
+      }
+    }
+  ],
   base: '/JSON-Formatter/',
 })

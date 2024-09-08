@@ -4,7 +4,7 @@ import Validator from './components/Validator.vue'
 
 <template>
   <div class="flex flex-row w-full justify-center mb-5">
-    <img src="../public/jsonvalidator.svg" class="logo validator text-xl" alt="validator logo" />
+    <img src="/jsonvalidator.svg" class="logo validator text-xl" alt="validator logo" />
   </div>
   <Validator />
 </template>
