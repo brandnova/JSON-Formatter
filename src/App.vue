@@ -1,17 +1,12 @@
 <script setup>
-import HelloWorld from './components/HelloWorld.vue'
+import Validator from './components/Validator.vue'
 </script>
 
 <template>
-  <div class="flex flex-row w-full justify-center mb-10">
-    <a href="https://vitejs.dev" target="_blank">
-      <img src="/vite.svg" class="logo animate-bounce" alt="Vite logo" />
-    </a>
-    <a href="https://vuejs.org/" target="_blank">
-      <img src="./assets/vue.svg" class="logo vue animate-spin" alt="Vue logo" />
-    </a>
+  <div class="flex flex-row w-full justify-center mb-5">
+    <img src="../public/jsonvalidator.svg" class="logo validator text-xl" alt="validator logo" />
   </div>
-  <HelloWorld msg="Vite + Vue" />
+  <Validator />
 </template>
 
 <style scoped>
@@ -21,10 +16,7 @@ import HelloWorld from './components/HelloWorld.vue'
   will-change: filter;
   transition: filter 300ms;
 }
-.logo:hover {
-  filter: drop-shadow(0 0 2em #646cffaa);
-}
-.logo.vue:hover {
-  filter: drop-shadow(0 0 2em #42b883aa);
+.logo.validator:hover {
+  filter: drop-shadow(0 0 2em #121413aa);
 }
 </style>
